@@ -7,7 +7,7 @@
 
 body, html {
     font-family: 'Arial', sans-serif;
-    background-color: #f1f1f1;
+    background-color: #f1f1f1; /* Cinza claro */
     color: #333;
     line-height: 1.6;
 }
@@ -20,7 +20,7 @@ body, html {
 
 /* Cabeçalho */
 header {
-    background-color: #333;
+    background-color: #333; /* Cinza escuro para o cabeçalho */
     color: white;
     padding: 20px;
     text-align: center;
@@ -31,8 +31,9 @@ header h1 {
     font-weight: bold;
 }
 
+/* Navegação */
 nav {
-    background-color: #222;
+    background-color: #222; /* Cinza muito escuro */
     display: flex;
     justify-content: center;
     padding: 10px 0;
@@ -48,9 +49,18 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #b30000;
+    background-color: #b30000; /* Vermelho sangue ao passar o mouse */
     color: #fff;
     border-radius: 5px;
+}
+
+/* Retira o destaque azul de links e botões interativos */
+a, button {
+    outline: none; /* Remove bordas de foco padrão */
+}
+
+a:focus, button:focus {
+    outline: 2px solid #b30000; /* Muda o foco (ao usar o teclado) para vermelho */
 }
 
 /* Hero Section */
@@ -94,7 +104,7 @@ h2 {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 40px;
-    color: #b30000;
+    color: #b30000; /* Vermelho sangue */
 }
 
 .article-grid {
@@ -126,7 +136,7 @@ h2 {
 
 .article-card h3 {
     font-size: 1.5rem;
-    color: #b30000;
+    color: #b30000; /* Vermelho sangue */
     margin-bottom: 10px;
 }
 
@@ -149,6 +159,15 @@ button {
 
 button:hover {
     background-color: #800000;
+}
+
+/* Retirar o destaque azul de botões e links em navegadores */
+button, a {
+    outline: none;
+}
+
+button:focus, a:focus {
+    outline: 2px solid #b30000;
 }
 
 /* Vídeo */
