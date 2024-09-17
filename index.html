@@ -3,211 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Site sobre artigos de manutenção com vídeos e imagens explicativas.">
-    <title>Artigos de Manutenção</title>
-
-    <!-- Link para CSS-->
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Comércio de Equipamentos Industriais com soluções personalizadas e assistência técnica de qualidade.">
+    <title>Início - Comércio de Equipamentos Industriais</title>
     
-    <!-- CSS básico para estrutura -->
-    <style>
-        /* Estilos globais */
-        body, html {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            box-sizing: border-box;
-            color: #333;
-        }
-
-        /* Layout responsivo */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        header {
-            background-color: #004d80;
-            color: white;
-            padding: 15px;
-            text-align: center;
-        }
-
-        nav {
-            background-color: #003366;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        /* Imagem de fundo da Home */
-        .hero {
-            background-image: url('https://via.placeholder.com/1500x800'); /* Substitua com a URL da imagem real */
-            background-size: cover;
-            background-position: center;
-            height: 60vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-            font-size: 2rem;
-            font-weight: bold;
-        }
-
-        /* Estilos das seções */
-        section {
-            padding: 40px 0;
-        }
-
-        .section-dark {
-            background-color: #f4f4f4;
-        }
-
-        .section-light {
-            background-color: white;
-        }
-
-        /* Estilo dos vídeos */
-        .video-container {
-            display: flex;
-            justify-content: center;
-            padding: 20px;
-        }
-
-        iframe {
-            width: 100%;
-            max-width: 600px;
-            height: 315px;
-            border: none;
-        }
-
-        /* Estilo de artigos */
-        .article-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-
-        .article-card {
-            background-color: #003366;
-            color: white;
-            padding: 20px;
-            border-radius: 8px;
-            text-align: center;
-        }
-
-        .article-card img {
-            max-width: 100%;
-            border-radius: 8px;
-        }
-
-        .article-card h3 {
-            margin: 15px 0;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #004d80;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-
-        /* Estilo responsivo */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 1.5rem;
-            }
-
-            .hero {
-                font-size: 1.2rem;
-                height: 40vh;
-            }
-
-            iframe {
-                height: 250px;
-            }
-
-            nav a {
-                margin: 0 10px;
-            }
-        }
-    </style>
+    <!-- Link para o CSS -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <!-- Cabeçalho -->
+    <!-- Cabeçalho e Navegação -->
     <header>
-        <h1>Artigos de Manutenção</h1>
+        <h1>Comércio de Equipamentos Industriais</h1>
     </header>
-
-    <!-- Navegação -->
+    
     <nav>
-        <a href="#">Início</a>
-        <a href="#">Artigos</a>
-        <a href="#">Sobre</a>
-        <a href="#">Contato</a>
+        <a href="index.html">Início</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="solucoes.html">Soluções</a>
+        <a href="sobre.html">Sobre Nós</a>
+        <a href="contato.html">Contato</a>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h2>Bem-vindo ao nosso site de manutenção</h2>
-            <p>Aprenda tudo sobre consertos e melhorias com nossos tutoriais.</p>
-        </div>
-    </section>
+    <!-- Seção de Apresentação -->
+    <div class="hero">
+        <h2>Soluções Industriais Sob Medida</h2>
+        <p>Oferecemos equipamentos industriais de alta qualidade, com assistência técnica personalizada e soluções que garantem a eficiência e confiabilidade do seu negócio.</p>
+    </div>
 
-    <!-- Seção de Artigos em Destaque -->
-    <section class="section-light">
-        <div class="container">
-            <h2>Artigos em Destaque</h2>
-            <div class="article-grid">
-                <!-- Artigo 1 -->
-                <div class="article-card">
-                    <img src="https://via.placeholder.com/300x200" alt="Imagem do Artigo 1">
-                    <h3>Como reparar um vazamento</h3>
-                    <p>Descubra como consertar um vazamento em casa com ferramentas simples.</p>
-                </div>
-                <!-- Artigo 2 -->
-                <div class="article-card">
-                    <img src="https://via.placeholder.com/300x200" alt="Imagem do Artigo 2">
-                    <h3>Troca de Lâmpadas</h3>
-                    <p>Aprenda o processo de substituição de lâmpadas de maneira segura.</p>
-                </div>
-                <!-- Artigo 3 -->
-                <div class="article-card">
-                    <img src="https://via.placeholder.com/300x200" alt="Imagem do Artigo 3">
-                    <h3>Instalação de Ventilador</h3>
-                    <p>Veja como instalar um ventilador de teto de forma eficiente.</p>
-                </div>
+    <!-- Seção Principal de Produtos -->
+    <section>
+        <h2>Nossos Equipamentos de Qualidade</h2>
+        <div class="article-grid">
+            <div class="article-card">
+                <img src="img/equipamento1.jpg" alt="Equipamento Industrial 1">
+                <h3>Soluções para Automação</h3>
+                <p>Equipamentos de última geração para automação industrial, garantindo precisão e eficiência no seu processo produtivo.</p>
+                <a href="produtos.html">Ver mais</a>
+            </div>
+            <div class="article-card">
+                <img src="img/equipamento2.jpg" alt="Equipamento Industrial 2">
+                <h3>Equipamentos de Elevação</h3>
+                <p>Segurança e qualidade em cada operação com nossos sistemas de elevação e movimentação de carga.</p>
+                <a href="produtos.html">Ver mais</a>
             </div>
         </div>
     </section>
 
-    <!-- Seção de Vídeo -->
-    <section class="section-dark">
-        <div class="container">
-            <h2>Vídeo Tutorial</h2>
-            <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/EXEMPLO_ID" title="YouTube video" allowfullscreen></iframe>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
+    <!-- Rodapé -->
     <footer>
-        <p>&copy; 2024 Artigos de Manutenção. Todos os direitos reservados.</p>
+        <p>&copy; 2024 - Comércio de Equipamentos Industriais</p>
     </footer>
 
 </body>
